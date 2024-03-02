@@ -173,14 +173,14 @@ span {
   transform: scale(1.02);
 }
 .service-box i {
-  font-size: 6rem;
+  font-size: 7rem;
   color: var(--main-color);
 }
 .service-box h3 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
 }
 .service-box p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin: 1rem 0 3rem;
 }
 .portfolio {
@@ -310,7 +310,7 @@ span {
   color: var(--snd-bg-color);
 }
 
-/* breakk */
+/* breakk
 @media (max-width: 1200px) {
   html {
     font-size: 55px;
@@ -347,14 +347,17 @@ span {
     width: 100%;
     padding: 1rem 3%;
     background: var(--bg-color);
-    border-top: .1rem solid rgba(0, 0, 0, 0.2) ;
-    box-shadow: 0 .5rem rgba(0, 0, 0, 0.2);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem rgba(0, 0, 0, 0.2);
     display: none;
   }
-  .navbar .active{
+  .navbar .active {
     display: block;
-    
-
+  }
+  .navbar a {
+    display: block;
+    margin: 3rem 0;
+    font-size: 2rem;
   }
   .home {
     flex-direction: column;
@@ -379,7 +382,7 @@ span {
     width: 90vw;
     margin-top:4rem;
      */
-  .service h2 {
+  /* .service h2 {
     margin-bottom: 3rem;
   }
   .portfolio h2 {
@@ -406,4 +409,4 @@ span {
   .contact form .input-box input {
     width: 100%;
   }
-}
+} */ */
