@@ -12,7 +12,7 @@
 }
 :root {
   --bg-color: #191f36;
-  --snd-bf-color: #262b40;
+  --snd-bg-color: #262b40;
   --text-color: #fff;
   --main-color: #59b2f4;
 }
@@ -89,22 +89,10 @@ span {
   width: 25vw;
   animation: floating 4s ease-in-out infinite;
 }
-
-/* @keyframes floatImage {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-2.4rem);
-  }
-  100% {
-    transform: translateY(0);
-  }
-} */
 .home-content p {
   font-size: 1.6rem;
 }
-.social-media {
+.social-media a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -117,4 +105,305 @@ span {
   color: var(--main-color);
   margin: 3rem 1.5rem 3rem 0;
   transition: 0.5s ease;
+}
+.social-media a:hover {
+  background: rgb(244, 238, 238);
+  color: var(--snd-bg-color);
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  color: var(--bg-color);
+  letter-spacing: 0.1rem;
+  font-weight: 550;
+  transition: 0.5s ease;
+}
+.btn:hover {
+  background: rgb(244, 238, 238);
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--snd-bg-color);
+}
+/* .about-image img {
+  width: 35vw;
+} */
+.heading {
+  text-align: center;
+  font-size: 4.3rem;
+}
+.about-content h2 {
+  text-align: left;
+  line-height: 1.2;
+  font-size: 2rem;
+}
+.about-content h3 {
+  font-size: 3rem;
+}
+.about-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+.service h2 {
+  margin-bottom: 5rem;
+}
+.service-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.service-container .service-box {
+  flex: 1 1 30rem;
+  background: var(--snd-bg-color);
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 0.2rem solid var(--bg-color);
+  transition: 0.5s ease;
+}
+.service-container .service-box:hover {
+  border-color: var(--main-color);
+  transform: scale(1.02);
+}
+.service-box i {
+  font-size: 6rem;
+  color: var(--main-color);
+}
+.service-box h3 {
+  font-size: 2.5rem;
+}
+.service-box p {
+  font-size: 1.5rem;
+  margin: 1rem 0 3rem;
+}
+.portfolio {
+  background: var(--snd-bg-color);
+}
+.portfolio h2 {
+  margin-bottom: 4rem;
+}
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+}
+.portfolio-container .portfolio-box {
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+  display: flex;
+}
+.portfolio-box img {
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: o.6;
+}
+.portfolio-box:hover img {
+  transform: scale(1);
+}
+.portfolio-box .portfolio-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1) var(--main-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  transform: translateY(100%);
+  transition: 0.5s ease;
+}
+
+.portfolio-layer h4 {
+  font-size: 1.5rem;
+}
+.portfolio-layer p {
+  font-size: 1.5rem;
+  margin: 0.3rem 0 1rem;
+}
+.portfolio-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: var(--text-color);
+  border-radius: 50%;
+}
+.portfolio-layer a i {
+  font-size: 2rem;
+  color: var(--snd-bg-color);
+}
+.contact h2 {
+  margin-bottom: 4rem;
+}
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background: var(--snd-bg-color);
+  border-radius: 0.7rem;
+  margin: 0.7rem 0;
+}
+.contact form .input-box input {
+  width: 49%;
+}
+.contact form textarea {
+  resize: none;
+}
+.contact form .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background: var(--snd-bg-color);
+}
+.footer-text {
+  font-size: 1.5rem;
+}
+
+.footer-iconTop {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  background-color: var(--main-color);
+  transition: 0.5s ease;
+  border-radius: 0.5rem;
+}
+.footer-iconTop a:hover {
+  box-shadow: 0 0 1rem var(--main-color);
+}
+.footer-iconTop a i {
+  font-size: 2.5rem;
+  color: var(--snd-bg-color);
+}
+
+/* breakk */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55px;
+  }
+}
+@media (max-width: 990px) {
+  .header {
+    padding: 2rem 3%;
+  }
+  section {
+    padding: 10rem 3%;
+  }
+  .service {
+    padding: 7rem;
+  }
+  .portfolio {
+    padding-bottom: 7rem;
+  }
+  .contact {
+    min-height: auto;
+  }
+  .footer {
+    padding: 2rem 3%;
+  }
+}
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bg-color);
+    border-top: .1rem solid rgba(0, 0, 0, 0.2) ;
+    box-shadow: 0 .5rem rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+  .navbar .active{
+    display: block;
+    
+
+  }
+  .home {
+    flex-direction: column;
+  }
+  .home-content h3 {
+    font-size: 2.6rem;
+  }
+  .home-content h1 {
+    font-size: 5rem;
+  }
+  .home-content {
+    order: 2;
+  }
+  .homeimage img {
+    width: 70vw;
+    margin-top: 4rem;
+  }
+  .about {
+    flex-direction: column;
+  }
+  /* .about-img img{
+    width: 90vw;
+    margin-top:4rem;
+     */
+  .service h2 {
+    margin-bottom: 3rem;
+  }
+  .portfolio h2 {
+    margin-bottom: 3rem;
+  }
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 617px) {
+  .portfolio-container {
+    grid-template-columns: 1fr;
+  }
+  .homeimage img {
+    width: 80vw;
+    margin-top: 8rem;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .contact form .input-box input {
+    width: 100%;
+  }
 }
